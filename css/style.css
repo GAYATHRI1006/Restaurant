@@ -1,0 +1,141 @@
+:root{
+    --pink:#F28585;
+    --orange:#FFA447;
+    --yellow:#FFFC9B;
+    --green:#B7E5B4;
+
+}
+
+
+
+body,h2{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.landing{
+    background-image: url('../media/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+header a{
+    text-decoration: none;
+    color:var(--orange);
+    min-width:182px;
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 1em;
+    padding: 1em;
+
+}
+#logo{
+    flex: 3;
+    font-size: 2em;
+    min-width: 357px;
+}
+nav{
+    flex: 2;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    flex: 1;
+    
+}
+nav a:hover{
+    color:#FFFC9B;
+}
+header i, nav a i{
+    margin-right: .5em;
+}
+.maintext{
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    justify-content: center;
+    padding: 2em;
+}
+.tagline1{
+    color: #F28585;
+    font-size: 2em;
+    font-weight: bolder;
+}
+.tagline2{
+    color:#B7E5B4;
+    font-size: 1.5em;
+}
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width: 20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .85em;
+    background-color: #FFFC9B;
+    border: 1px solid var(--yellow);
+}
+.menu{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(245px,1fr));
+    background: linear-gradient(to right, rgb(105, 95, 121),rgb(36, 38, 61));
+    color: white;
+
+}
+#menuheading,#locations{
+    background: linear-gradient(to right, rgb(105, 95, 121),rgb(36, 38, 61));
+    font-size: 2.25rem;
+    color: #F28585;
+    display: flex;
+    justify-content: center;
+
+}
+.menu th{
+    color: #B7E5B4;
+    font-size: 1.75rem;
+}
+table{
+    width: 100%;
+    padding: 1em;
+}
+.menu tr{
+    display: flex;
+    justify-content: center;
+    margin-top:.9em ;
+
+}
+.menu td:nth-child(1){
+    flex: 1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    justify-self: right;
+}
+.maindishes{
+    grid-row: span 2;
+}
+.locations{
+    background: linear-gradient(to right, rgb(105, 95, 121),rgb(36, 38, 61));  
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.locations h2{
+    color: #B7E5B4;
+    margin-bottom: .9em;
+}
+.locations div{
+    flex: 1;
+    padding: 1em;
+    min-width: 184px;
+}
+footer{
+    background-color: rgb(31, 33, 48);
+    color: white;
+    padding: .25em 1em;
+}
